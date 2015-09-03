@@ -62,7 +62,7 @@ export class BullhornOAuthStrategy extends OAuth2Strategy {
     * @api protected
     */
     userProfile(accessToken, done) {
-      this._oauth2.get(this.profileUrl, accessToken, function (err, body, res) {
+      this._oauth2.get(this.profileURL, accessToken, function (err, body, res) {
         if (err) { return done(new InternalOAuthError('failed to fetch user profile', err)); }
 
         try {
