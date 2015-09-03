@@ -1,6 +1,6 @@
 {
     "name": "passport-bullhorn",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Bullhorn (OAuth) authentication strategy for Passport",
     "keywords": ["passport", "bullhorn", "oauth", "oauth2", "authentication"],
     "main": "lib/index.js",
