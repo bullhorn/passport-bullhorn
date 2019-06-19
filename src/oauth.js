@@ -40,12 +40,12 @@ import { OAuth2Strategy, InternalOAuthError } from 'passport-oauth';
 export class BullhornOAuthStrategy extends OAuth2Strategy {
     constructor(options, verify) {
         options = options || {};
-        options.authorizationURL = options.authorizationURL || 'http://rest.bullhornstaffing.com/oauth/authorize';
-        options.tokenURL = options.tokenURL || 'http://rest.bullhornstaffing.com/oauth/token';
+        options.authorizationURL = options.authorizationURL || 'https://rest.bullhornstaffing.com/oauth/authorize?action=Login';
+        options.tokenURL = options.tokenURL || 'https://rest.bullhornstaffing.com/oauth/token';
 
         super(options, verify);
         this.name = 'bullhorn';   
-        this.profileURL = options.profileURL || 'http://rest.bullhorn.com/rest-services/login?version=*';
+        this.profileURL = options.profileURL || 'https://rest.bullhorn.com/rest-services/login?version=*';
     }
     
     /**
